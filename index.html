@@ -12,6 +12,182 @@
         <h1>Campus Canteen</h1>
         <nav>
             <a href="#home">Home</a>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Campus Canteen Menu</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #f8f5f0;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        header {
+            background: #263238;
+            color: white;
+            text-align: center;
+            padding: 25px 15px;
+        }
+
+        header h1 {
+            margin-bottom: 10px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 12px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #ffcc80;
+        }
+
+        .hero {
+            background: #ffe0b2;
+            text-align: center;
+            padding: 45px 15px;
+        }
+
+        .hero h2 {
+            margin-bottom: 10px;
+        }
+
+        .menu-section {
+            padding: 35px 20px;
+            text-align: center;
+        }
+
+        .menu-section h2 {
+            margin-bottom: 25px;
+        }
+
+        .menu-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            max-width: 1000px;
+            margin: auto;
+        }
+
+        .card {
+            background: white;
+            padding: 25px 18px;
+            border-radius: 10px;
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .card h3 {
+            color: #bf6b27;
+            margin-bottom: 10px;
+        }
+
+        .card strong {
+            display: block;
+            margin-top: 12px;
+        }
+
+        footer {
+            background: #263238;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 25px;
+        }
+
+        @media (max-width: 700px) {
+            .menu-container {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 450px) {
+            .menu-container {
+                grid-template-columns: 1fr;
+            }
+
+            nav a {
+                margin: 0 6px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Campus Canteen</h1>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#menu">Our Menu</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <section id="home" class="hero">
+        <h2>Welcome to Our Campus Canteen</h2>
+        <p>Fresh food, tasty snacks, and refreshing drinks!</p>
+    </section>
+
+    <main id="menu" class="menu-section">
+        <h2>Our Menu</h2>
+
+        <div class="menu-container">
+            <div class="card">
+                <h3>Zinger Burger</h3>
+                <p>Crispy chicken burger with fresh vegetables.</p>
+                <strong>Rs. 350</strong>
+            </div>
+
+            <div class="card">
+                <h3>Chicken Sandwich</h3>
+                <p>Fresh sandwich filled with delicious chicken.</p>
+                <strong>Rs. 250</strong>
+            </div>
+
+            <div class="card">
+                <h3>French Fries</h3>
+                <p>Golden and crispy potato fries.</p>
+                <strong>Rs. 150</strong>
+            </div>
+
+            <div class="card">
+                <h3>Pizza Slice</h3>
+                <p>Cheesy pizza slice with tasty toppings.</p>
+                <strong>Rs. 200</strong>
+            </div>
+
+            <div class="card">
+                <h3>Cold Coffee</h3>
+                <p>Chilled coffee for a refreshing break.</p>
+                <strong>Rs. 180</strong>
+            </div>
+
+            <div class="card">
+                <h3>Fresh Juice</h3>
+                <p>Refreshing fruit juice served chilled.</p>
+                <strong>Rs. 120</strong>
+            </div>
+        </div>
+    </main>
+
+    <footer id="contact">
+        <p>Campus Canteen | Thank you for visiting!</p>
+    </footer>
+</body>
+</html>
+
             <a href="#menu">Our Menu</a>
             <a href="#contact">Contact</a>
         </nav>
